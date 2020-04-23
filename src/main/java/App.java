@@ -19,7 +19,7 @@ public class App {
         System.out.print("First guess:");
         int userInput = scan.nextInt();
         int randomGuess = 1 ;
-        int tries = 7;
+        int tries = 7 - 1;
         int numberOfGuesses = 0;
 
         if( userInput == randomGuess ){
@@ -28,9 +28,10 @@ public class App {
 
         while (tries != 0 && userInput != randomGuess){
 
+            tries--;
             userInput = scan.nextInt();
 
-            if(tries == 7){
+            if(tries == 0){
                 System.out.println("Sorry, you didn't guess it in 7 tries.  You lose.");
             }else if(userInput > randomGuess){
                 System.out.println("Sorry, that guess is too high.");
@@ -39,7 +40,7 @@ public class App {
             }
 
 
-            tries--;
+
             numberOfGuesses++;
 
         }
