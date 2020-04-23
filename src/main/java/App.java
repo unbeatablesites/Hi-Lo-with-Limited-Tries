@@ -24,21 +24,20 @@ public class App {
         int numberOfGuessesTally = 2;
 
 
+
+        if (userInput > randomGuess) {
+            System.out.println("Sorry, that guess is too high.");
+        }
+        if (userInput < randomGuess) {
+            System.out.println("Sorry, that guess is too low.");
+        }
         if (userInput == randomGuess) {
             System.out.println("You guessed it!  What are the odds?!?");
             System.exit(0);
-
-        } else {
-            if (userInput > randomGuess) {
-                System.out.println("Sorry, that guess is too high.");
-            } else if (userInput > randomGuess) {
-                System.out.println("Sorry, that guess is too low.");
-            }
         }
 
         while (tries != 0 && userInput != randomGuess) {
             System.out.print("Guess # " + numberOfGuessesTally + ": ");
-            tries--;
             userInput = scan.nextInt();
 
             if (tries == 0) {
@@ -54,6 +53,7 @@ public class App {
             } else {
                 System.out.println("You guessed it!  What are the odds?!?");
             }
+            tries--;
         }
     }
 }
