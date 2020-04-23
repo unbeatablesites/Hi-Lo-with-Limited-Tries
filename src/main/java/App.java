@@ -18,13 +18,18 @@ public class App {
 
         System.out.print("First guess:");
         int userInput = scan.nextInt();
-        int randomGuess = 1 + rand.nextInt(100);
+        int randomGuess = 1 ;
         int tries = 7;
 
-        while (tries != 0 || userInput != randomGuess){
+        if( userInput == randomGuess ){
+            System.out.println("You guessed it!  What are the odds?!?");
+        }
+
+        while (tries != 0 && userInput != randomGuess){
+
 
             userInput = scan.nextInt();
-
+            tries--;
 
         }
     }
