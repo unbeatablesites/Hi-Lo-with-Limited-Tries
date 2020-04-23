@@ -32,7 +32,7 @@ public class App {
             if(userInput > randomGuess){
                 System.out.println("Sorry, that guess is too high.");
             }
-            else  if(){
+            else  if(userInput > randomGuess){
                 System.out.println("Sorry, that guess is too low.");
             }
         }
