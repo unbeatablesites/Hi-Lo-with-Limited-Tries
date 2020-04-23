@@ -11,17 +11,19 @@ public class App {
 
     static void logic(){
 
-        System.out.println("I'm thinking of a number between 1-100.  You have 7 guesses.\n");
+        System.out.println("I'm thinking of a number between 1-100.  You have 7 guesses.");
 
         Scanner scan = new Scanner(System.in);
         Random rand = new Random();
 
+        System.out.print("First guess:");
         int userInput = scan.nextInt();
         int randomGuess = 1 + rand.nextInt(100);
         int tries = 7;
 
         while (tries != 0 || userInput != randomGuess){
 
+            userInput = scan.nextInt();
 
 
         }
