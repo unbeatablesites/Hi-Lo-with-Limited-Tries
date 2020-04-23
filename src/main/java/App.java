@@ -20,6 +20,7 @@ public class App {
         int userInput = scan.nextInt();
         int randomGuess = 1 ;
         int tries = 7;
+        int numberOfGuesses = 0;
 
         if( userInput == randomGuess ){
             System.out.println("You guessed it!  What are the odds?!?");
@@ -30,6 +31,7 @@ public class App {
 
             userInput = scan.nextInt();
             tries--;
+            numberOfGuesses++;
 
         }
     }
