@@ -28,17 +28,23 @@ public class App {
 
         while (tries != 0 && userInput != randomGuess){
 
-            if(userInput > randomGuess){
+            userInput = scan.nextInt();
+
+            if(tries == 7){
+                System.out.println("Sorry, you didn't guess it in 7 tries.  You lose.");
+            }else if(userInput > randomGuess){
                 System.out.println("Sorry, that guess is too high.");
             }else{
                 System.out.println("Sorry, that guess is too low.");
             }
 
-            userInput = scan.nextInt();
+
             tries--;
             numberOfGuesses++;
 
         }
+
+        System.out.println();
     }
 
 }
