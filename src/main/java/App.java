@@ -26,11 +26,13 @@ public class App {
 
         if( userInput == randomGuess ){
             System.out.println("You guessed it!  What are the odds?!?");
+            System.exit(0);
+
         }else{
             if(userInput > randomGuess){
                 System.out.println("Sorry, that guess is too high.");
             }
-            else {
+            else  if(){
                 System.out.println("Sorry, that guess is too low.");
             }
         }
@@ -54,7 +56,7 @@ public class App {
 
         }
 
-        System.out.println("System.out.println(\"You guessed it!  What are the odds?!?\");");
+        System.out.println("You guessed it!  What are the odds?!?");
     }
 
 }
