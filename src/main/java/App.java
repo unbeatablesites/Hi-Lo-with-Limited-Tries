@@ -20,7 +20,11 @@ public class App {
         int randomGuess = 1 + rand.nextInt(100);
         int tries = 7;
 
-        while ()
+        while (tries != 0 || userInput != randomGuess){
+
+
+
+        }
     }
 
 }
