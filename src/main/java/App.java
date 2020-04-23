@@ -29,7 +29,7 @@ public class App {
         }
 
         while (tries != 0 && userInput != randomGuess){
-            System.out.print("Guess # : "+numberOfGuessesTally );
+            System.out.print("Guess # "+numberOfGuessesTally+": " );
             tries--;
             userInput = scan.nextInt();
 
