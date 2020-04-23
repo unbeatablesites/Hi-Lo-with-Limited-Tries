@@ -21,13 +21,15 @@ public class App {
         int randomGuess = 1 ;
         int tries = 7 - 1;
         int numberOfGuesses = 0;
+        int numberOfGuessesTally = 2;
+
 
         if( userInput == randomGuess ){
             System.out.println("You guessed it!  What are the odds?!?");
         }
 
         while (tries != 0 && userInput != randomGuess){
-
+            System.out.print("Guess # : "+numberOfGuessesTally );
             tries--;
             userInput = scan.nextInt();
 
