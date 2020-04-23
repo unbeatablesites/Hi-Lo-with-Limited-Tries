@@ -46,8 +46,10 @@ public class App {
                 System.out.println("Sorry, you didn't guess it in 7 tries.  You lose.");
             }else if(userInput > randomGuess){
                 System.out.println("Sorry, that guess is too high.");
-            }else{
+            }else if(){
                 System.out.println("Sorry, that guess is too low.");
+            }else{
+                System.out.println("System.out.println(\"You guessed it!  What are the odds?!?\");");
             }
 
 
@@ -55,8 +57,6 @@ public class App {
             numberOfGuesses++;
 
         }
-
-        System.out.println("You guessed it!  What are the odds?!?");
     }
 
 }
