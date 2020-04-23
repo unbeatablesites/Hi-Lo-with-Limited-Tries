@@ -42,7 +42,7 @@ public class App {
             }
 
 
-
+            numberOfGuessesTally++;
             numberOfGuesses++;
 
         }
