@@ -16,7 +16,7 @@ public class App {
         Scanner scan = new Scanner(System.in);
         Random rand = new Random();
 
-        System.out.print("First guess:");
+        System.out.print("First guess: ");
         int userInput = scan.nextInt();
         int randomGuess = 1 ;
         int tries = 7 - 1;
@@ -26,6 +26,13 @@ public class App {
 
         if( userInput == randomGuess ){
             System.out.println("You guessed it!  What are the odds?!?");
+        }else{
+            if(userInput > randomGuess){
+                System.out.println("Sorry, that guess is too high.");
+            }
+            else {
+                System.out.println("Sorry, that guess is too low.");
+            }
         }
 
         while (tries != 0 && userInput != randomGuess){
@@ -47,7 +54,7 @@ public class App {
 
         }
 
-        System.out.println();
+        System.out.println("System.out.println(\"You guessed it!  What are the odds?!?\");");
     }
 
 }
